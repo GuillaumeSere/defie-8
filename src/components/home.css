@@ -1,0 +1,181 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0 auto;
+    width: 100%;
+}
+.slide-card{
+    position: relative;
+    max-width: 845px;
+    height: 535px;
+}
+.home-description{
+    max-width: 600px;
+    min-height: 535px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: white;
+}
+.home-description h1{
+    padding: 0 5rem;
+    font-size: 45px;
+    letter-spacing: -1px;
+    margin-top: -2rem;
+}
+.home-description p{
+    line-height: 22px;
+    padding: 0 4rem 0 5rem;
+    margin-top: 1.5rem;
+    color: hsl(0, 0%, 63%);
+}
+.home-description span{
+    margin-top: 2rem;
+    margin-right: 12rem;
+    letter-spacing: 10px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.home-description span:hover{
+    color: hsl(0, 0%, 63%);
+}
+.home-card{
+   width: 100%;
+   display: flex;
+}
+.card-left{
+    max-width: 420px;
+    height: 265px;
+    margin-top: -1px;
+}
+.content{
+    max-width: 580px;
+    background: white;
+}
+.card-right{
+    max-width: 440px;
+    height: 265px;
+}
+.slide-card .mobile-image {
+    display: none;
+    width: 100%;
+ }
+ .pagination{
+    z-index: 9999;
+    position: relative;
+    bottom: 5.2rem;
+    left: 52.5rem;
+ }
+ .btn-left,
+ .btn-right{
+    background: black;
+    border: none;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+ }
+ .btn-left:hover,
+ .btn-right:hover{
+    background: hsl(0, 0%, 27%);
+ }
+ .content{
+    padding: 4rem 2rem 0 3rem;
+ }
+ .content h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 6.5px;
+ }
+ .content p{
+    margin-top: 1.5rem;
+    line-height: 20px;
+    color: hsl(0, 0%, 63%);
+ }
+
+
+@media only screen and (max-width: 1440px) {
+    /* Pour les écrans plus petits que 1129px */
+    .container{
+        display: block;
+        position: relative;
+    }
+    .pagination{
+        position: absolute !important;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: auto;
+    }
+    .slide-card{
+        height: auto;
+        max-width: 100% !important;
+    }
+    .slide-card img {
+       display: none;
+    }
+    .btn-left,
+    .btn-right{
+       width: 55px;
+       height: 55px;
+    }
+    .slide-card .left,
+    .slide-card .right{
+        display: inline-block;
+    }
+    .slide-card .mobile-image {
+       display: block;
+       position: relative;
+       align-items: center;
+       width: 100%;
+    }
+    .home-description{
+        padding: 1.5rem;
+        margin-top: 1rem;
+        align-items: flex-start;
+    }
+    .home-description h1{
+        padding: 0;
+        font-size: 38px;
+        letter-spacing: -1px;
+        margin-top: -10rem;
+    }
+    .home-description p{
+        font-size: 8px;
+        padding: 0;
+        font-size: 17px;
+        margin-bottom: 1rem; 
+    }
+    .home-description span{
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .home-card{
+        flex-direction: column;
+        margin-top: -8rem;
+     }
+     .card-left{
+        max-width: 100%;
+        height: auto;
+    }
+    .card-left img{
+        width: 100%;
+    }
+    .content{
+        max-width: 580px;
+        padding: 2rem;
+        background: white;
+    }
+    .content h2{
+        font-size: 13px;
+    }
+    .card-right{
+        max-width: 100%;
+    }
+    .card-right img{
+        width: 100%;
+    }
+}

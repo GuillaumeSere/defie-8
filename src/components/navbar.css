@@ -1,0 +1,135 @@
+.navbar {
+    position: absolute;
+    z-index: 9999;
+}
+
+.menu {
+    margin-top: 4rem;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.close-button {
+    position: absolute;
+    top: 2.2rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.menu ul {
+    display: flex;
+    margin-left: 11rem;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    margin-right: 2rem;
+    color: white;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -.3rem;
+    left: 25%;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+.menu ul li a:hover::after{
+    width: 50%;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 4rem;
+    margin-top: -1rem;
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        z-index: 99999;
+        justify-content: center;
+    }
+
+    .menu {
+        position: fixed;
+        margin-top: 0;
+        left: 0;
+        height: 12%;
+        width: 100%;
+        z-index: 9999;
+        background: white;
+        transform: translateX(-200%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu.open {
+        transform: translateX(0%);
+    }
+
+    .logo.open {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        left: 0;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .menu ul li a {
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+    }
+    .menu ul li a:hover{
+        color: hsl(0, 0%, 63%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .menu-icon.open {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 3rem;
+    }
+
+}

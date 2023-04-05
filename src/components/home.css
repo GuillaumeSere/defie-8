@@ -97,7 +97,7 @@
  }
 
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1360px) {
     /* Pour les écrans plus petits que 1129px */
     .container{
         display: block;

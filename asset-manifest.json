@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/defie-8/static/css/main.67a60c3a.css",
+    "main.css": "/defie-8/static/css/main.8f61e628.css",
     "main.js": "/defie-8/static/js/main.c02b3d5d.js",
     "static/media/desktop-image-hero-1.jpg": "/defie-8/static/media/desktop-image-hero-1.91901d0d47ea68db9434.jpg",
     "static/media/desktop-image-hero-3.jpg": "/defie-8/static/media/desktop-image-hero-3.05fd679aa0d31e01c176.jpg",
@@ -16,11 +16,11 @@
     "static/media/icon-hamburger.svg": "/defie-8/static/media/icon-hamburger.dc022bac537a273572af58dec556ed7e.svg",
     "static/media/icon-angle-left.svg": "/defie-8/static/media/icon-angle-left.d53877dfd9c6774a68749ad0239b4ce1.svg",
     "static/media/icon-angle-right.svg": "/defie-8/static/media/icon-angle-right.0ed3f81fbd14b3bd61d875b7df144e4c.svg",
-    "main.67a60c3a.css.map": "/defie-8/static/css/main.67a60c3a.css.map",
+    "main.8f61e628.css.map": "/defie-8/static/css/main.8f61e628.css.map",
     "main.c02b3d5d.js.map": "/defie-8/static/js/main.c02b3d5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.67a60c3a.css",
+    "static/css/main.8f61e628.css",
     "static/js/main.c02b3d5d.js"
   ]
 }
